@@ -208,14 +208,14 @@ BODY = """
     </div>
     <div class="gen-label" style="margin-top:6px;">黃海棠 (Nora) × 黃永琪 → Gen 5</div>
     <div class="gen-row">
-      <div class="card in-law"><div class="card-name">黃頌尹</div><div class="card-alias">Edwin</div><div class="card-note">× Laura · San Jose CA</div></div>
-      <div class="card in-law"><div class="card-name">頌慈</div><div class="card-alias">Chichi</div></div>
-      <div class="card in-law"><div class="card-name">頌惠</div><div class="card-alias">Karen</div></div>
+      <div class="card yang"><div class="card-name">黃頌尹</div><div class="card-alias">Edwin</div><div class="card-note">× Laura · San Jose CA</div></div>
+      <div class="card yang"><div class="card-name">頌慈</div><div class="card-alias">Chichi</div></div>
+      <div class="card yang"><div class="card-name">頌惠</div><div class="card-alias">Karen</div></div>
     </div>
     <div class="gen-label" style="margin-top:6px;">黃啟信 (Carson) → Gen 5</div>
     <div class="gen-row">
-      <div class="card in-law"><div class="card-name">Jeff Wong</div></div>
-      <div class="card in-law"><div class="card-name">Chris Wong</div></div>
+      <div class="card yang"><div class="card-name">Jeff Wong</div></div>
+      <div class="card yang"><div class="card-name">Chris Wong</div></div>
     </div>
   </div>
 
@@ -274,9 +274,9 @@ BODY = """
     </div>
     <div class="arr">↓</div>
     <div class="gen-row">
-      <div class="card in-law deceased"><div class="card-name">李世侃</div><div class="card-alias">Anthony</div><div class="card-year">b. 1943 · d. 2020</div><div class="card-note">× 黃穗珠 (Grace, b. 1946)</div></div>
-      <div class="card in-law"><div class="card-name">李世任</div><div class="card-alias">Sumner</div><div class="card-year">b. 1946 · Edmonton</div><div class="card-note">× Annie → Ivar, Samantha?</div></div>
-      <div class="card in-law"><div class="card-name">李世儒</div><div class="card-alias">Winston</div><div class="card-year">b. 1949 · Isle of Wight UK</div><div class="card-note">→ Benjamin, Daniel, Mathew, Sebastian</div></div>
+      <div class="card yang deceased"><div class="card-name">李世侃</div><div class="card-alias">Anthony</div><div class="card-year">b. 1943 · d. 2020</div><div class="card-note">× 黃穗珠 (Grace, b. 1946)</div></div>
+      <div class="card yang"><div class="card-name">李世任</div><div class="card-alias">Sumner</div><div class="card-year">b. 1946 · Edmonton</div><div class="card-note">× Annie → Ivar, Samantha?</div></div>
+      <div class="card yang"><div class="card-name">李世儒</div><div class="card-alias">Winston</div><div class="card-year">b. 1949 · Isle of Wight UK</div><div class="card-note">→ Benjamin, Daniel, Mathew, Sebastian</div></div>
     </div>
   </div>
 </div>
@@ -313,14 +313,14 @@ BODY = """
     <div class="arr">↓ child</div>
     <div class="gen-row">
       <div class="couple">
-        <div class="card in-law"><div class="card-name">鐘伊雲</div><div class="card-alias">Evelyn</div><div class="card-note">Toronto</div></div>
+        <div class="card yang"><div class="card-name">鐘伊雲</div><div class="card-alias">Evelyn</div><div class="card-note">Toronto</div></div>
         <div class="sx">×</div>
         <div class="card in-law"><div class="card-name">鐘啟明</div><div class="card-alias">Andrew</div></div>
       </div>
     </div>
     <div class="gen-label">Gen 5</div>
     <div class="gen-row">
-      <div class="card in-law"><div class="card-name">Cheryl 鐘</div></div>
+      <div class="card yang"><div class="card-name">Cheryl 鐘</div></div>
     </div>
   </div>
 
@@ -377,9 +377,9 @@ BODY = """
     </div>
     <div class="arr">↓ Gen 4 children</div>
     <div class="gen-row">
-      <div class="card in-law"><div class="card-name">李道恩</div><div class="card-year">b. 1969 · HK</div><div class="card-note">× 鄧佩雯 → 李國義 (2019)</div></div>
-      <div class="card in-law"><div class="card-name">李道真</div><div class="card-year">b. 1972 · HK</div><div class="card-note">× 陸靜儀 → 李謙羭 (2001), 李謙翔 (2003)</div></div>
-      <div class="card in-law"><div class="card-name">李道賢</div><div class="card-year">b. 1977 · HK</div><div class="card-note">× 甘振揚 → 甘來恩 (2014), 甘來希 (2017)</div></div>
+      <div class="card yang"><div class="card-name">李道恩</div><div class="card-year">b. 1969 · HK</div><div class="card-note">× 鄧佩雯 → 李國義 (2019)</div></div>
+      <div class="card yang"><div class="card-name">李道真</div><div class="card-year">b. 1972 · HK</div><div class="card-note">× 陸靜儀 → 李謙羭 (2001), 李謙翔 (2003)</div></div>
+      <div class="card yang"><div class="card-name">李道賢</div><div class="card-year">b. 1977 · HK</div><div class="card-note">× 甘振揚 → 甘來恩 (2014), 甘來希 (2017)</div></div>
     </div>
   </div>
 </div>
@@ -437,20 +437,20 @@ BODY = """
     <div class="arr">↓ Gen 4 child</div>
     <div class="gen-row">
       <div class="couple">
-        <div class="card in-law"><div class="card-name">劉芳之</div><div class="card-year">b. 1955</div></div>
+        <div class="card yang"><div class="card-name">劉芳之</div><div class="card-year">b. 1955</div></div>
         <div class="sx">×</div>
         <div class="card in-law"><div class="card-name">謝明</div><div class="card-alias">Ming Hsieh</div><div class="card-year">b. 1956</div><div class="card-note">divorced · Founder, Cogent Systems</div></div>
       </div>
     </div>
     <div class="arr">↓ Gen 5 children</div>
     <div class="gen-row">
-      <div class="card in-law"><div class="card-name">謝沛琳</div><div class="card-year">b. 1988</div></div>
-      <div class="card in-law"><div class="card-name">謝沛婷</div><div class="card-year">b. 1991</div><div class="card-note">× 李芳杰 (b. 1991)</div></div>
+      <div class="card yang"><div class="card-name">謝沛琳</div><div class="card-year">b. 1988</div></div>
+      <div class="card yang"><div class="card-name">謝沛婷</div><div class="card-year">b. 1991</div><div class="card-note">× 李芳杰 (b. 1991)</div></div>
     </div>
     <div class="gen-label">Gen 6 — 謝沛婷's children</div>
     <div class="gen-row">
-      <div class="card in-law"><div class="card-name">李式明</div><div class="card-year">b. 2024</div></div>
-      <div class="card in-law"><div class="card-name">李式浩</div><div class="card-year">b. 2026</div></div>
+      <div class="card yang"><div class="card-name">李式明</div><div class="card-year">b. 2024</div></div>
+      <div class="card yang"><div class="card-name">李式浩</div><div class="card-year">b. 2026</div></div>
     </div>
   </div>
 
@@ -466,8 +466,8 @@ BODY = """
     </div>
     <div class="arr">↓ Gen 4 children</div>
     <div class="gen-row">
-      <div class="card in-law"><div class="card-name">林澤崑</div><div class="card-year">b. 1959</div><div class="card-note">× 孫䁱滌 → 林恩瀚 (b. 2009)</div></div>
-      <div class="card in-law"><div class="card-name">林澤堅</div><div class="card-alias">Daniel</div><div class="card-year">b. 1964</div><div class="card-note">× 李淑賢 (Helen) → 林綽渝 (2003), 林子浩 (2008)</div></div>
+      <div class="card yang"><div class="card-name">林澤崑</div><div class="card-year">b. 1959</div><div class="card-note">× 孫䁱滌 → 林恩瀚 (b. 2009)</div></div>
+      <div class="card yang"><div class="card-name">林澤堅</div><div class="card-alias">Daniel</div><div class="card-year">b. 1964</div><div class="card-note">× 李淑賢 (Helen) → 林綽渝 (2003), 林子浩 (2008)</div></div>
     </div>
   </div>
 
@@ -489,8 +489,8 @@ BODY = """
     </div>
     <div class="gen-label" style="margin-top:8px;">楊碧惠 × 詹兆輝 → Gen 5</div>
     <div class="gen-row">
-      <div class="card in-law"><div class="card-name">詹弘信</div><div class="card-year">b. 1999</div></div>
-      <div class="card in-law"><div class="card-name">詹詠心</div><div class="card-year">b. 2003</div></div>
+      <div class="card yang"><div class="card-name">詹弘信</div><div class="card-year">b. 1999</div></div>
+      <div class="card yang"><div class="card-name">詹詠心</div><div class="card-year">b. 2003</div></div>
     </div>
     <div class="gen-label">楊祖權 × 何佳穎 → Gen 5</div>
     <div class="gen-row">
