@@ -172,13 +172,13 @@ BODY = """
     </div>
     <div class="gen-label" style="margin-top:8px;">楊碧瓖 × Nagi Awas → Gen 5</div>
     <div class="gen-row">
-      <div class="card in-law"><div class="card-name">Darek Awas</div><div class="card-year">b. 1981 · E. Brunswick NJ</div><div class="card-note">× Alina Kozlova</div></div>
+      <div class="card yang"><div class="card-name">Darek Awas</div><div class="card-year">b. 1981 · E. Brunswick NJ</div><div class="card-note">× Alina Kozlova</div></div>
     </div>
     <div class="gen-label">Gen 6 — Darek's children</div>
     <div class="gen-row">
-      <div class="card in-law"><div class="card-name">Marshall Awas</div></div>
-      <div class="card in-law"><div class="card-name">Afina Awas</div></div>
-      <div class="card in-law"><div class="card-name">Anderson Awas</div></div>
+      <div class="card yang"><div class="card-name">Marshall Awas</div></div>
+      <div class="card yang"><div class="card-name">Afina Awas</div></div>
+      <div class="card yang"><div class="card-name">Anderson Awas</div></div>
     </div>
   </div>
 
