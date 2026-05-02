@@ -20,15 +20,15 @@ h1 { text-align: center; font-size: 22px; font-weight: 400; color: #2a2520; marg
 .subsection-title { font-size: 10px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #bbb; margin-bottom: 10px; }
 .gen-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; margin-bottom: 8px; }
 .gen-label { font-size: 10px; color: #ccc; text-align: center; letter-spacing: 0.04em; margin: 4px 0 8px; }
-.card { width: 118px; background: #fff; border: 0.5px solid #ccc; border-radius: 8px; padding: 7px 8px 8px; text-align: center; flex-shrink: 0; }
+.card { width: 122px; background: #fff; border: 0.5px solid #ccc; border-radius: 8px; padding: 7px 8px 8px; text-align: center; flex-shrink: 0; }
 .card.yang { border-top: 2.5px solid #4A7FBB; }
 .card.in-law { border-top: 2.5px solid #7BAF8E; }
 .card.deceased { opacity: 0.65; }
 .card.deceased .card-name::before { content: "† "; color: #999; font-weight: 400; }
 .card-name { font-size: 11.5px; font-weight: 500; color: #1a1a1a; line-height: 1.3; }
+.card-english { font-size: 10.5px; color: #555; margin-top: 2px; line-height: 1.3; font-style: normal; }
 .card-year { font-size: 10px; color: #aaa; margin-top: 2px; line-height: 1.3; }
 .card-note { font-size: 9.5px; color: #999; margin-top: 2px; font-style: italic; line-height: 1.25; }
-.card-alias { font-size: 9.5px; color: #bbb; margin-top: 2px; line-height: 1.3; }
 .couple { display: flex; align-items: flex-start; gap: 4px; }
 .sx { font-size: 11px; color: #ccc; padding-top: 14px; flex-shrink: 0; line-height: 1; }
 .arr { text-align: center; font-size: 11px; color: #ccc; margin: 3px 0 4px; }
@@ -39,12 +39,12 @@ h1 { text-align: center; font-size: 22px; font-weight: 400; color: #2a2520; marg
 
 <h1>楊氏家族樹 · Yeung Family Tree</h1>
 <div class="subtitle">Six generations · Seattle · Hong Kong · Antwerp · San Diego · Melbourne · Vancouver · New Jersey · Northern California</div>
-<div class="datestamp-wrap"><span class="datestamp">Data last updated: April 10, 2026</span></div>
+<div class="datestamp-wrap"><span class="datestamp">Data last updated: April 21, 2026</span></div>
 
 <div class="legend">
   <div class="legend-item"><div class="legend-dot" style="background:#4A7FBB;"></div>楊氏 bloodline</div>
   <div class="legend-item"><div class="legend-dot" style="background:#7BAF8E;"></div>Married in</div>
-  <div class="legend-item" style="opacity:0.65;"><div class="legend-dot" style="background:#4A7FBB;"></div>† Deceased (faded)</div>
+  <div class="legend-item" style="opacity:0.65;"><div class="legend-dot" style="background:#888;"></div>† Deceased (faded)</div>
 </div>
 
 <!-- ANCESTORS -->
@@ -85,15 +85,15 @@ h1 { text-align: center; font-size: 22px; font-weight: 400; color: #2a2520; marg
     <div class="couple">
       <div class="card yang deceased"><div class="card-name">楊煒廷</div><div class="card-year">b. 1882 · d. 1962</div></div>
       <div class="sx">×</div>
-      <div class="card in-law deceased"><div class="card-name">黃惠蘭</div><div class="card-alias">aka 黃才喜</div><div class="card-year">b. 1883 · d. 1918</div></div>
+      <div class="card in-law deceased"><div class="card-name">黃惠蘭</div><div class="card-note">aka 黃才喜</div><div class="card-year">b. 1883 · d. 1918</div></div>
     </div>
   </div>
   <div class="arr">↓ Generation 3 children</div>
   <div class="gen-row">
-    <div class="card yang deceased"><div class="card-name">楊伯章</div><div class="card-alias">楊育之</div><div class="card-year">d. 1959</div><div class="card-note">2 wives · see below</div></div>
-    <div class="card yang deceased"><div class="card-name">楊伯贊</div><div class="card-year">b. 1903</div><div class="card-note">2 wives · see below</div></div>
-    <div class="card yang deceased"><div class="card-name">楊英鰲</div><div class="card-alias">楊鰲</div><div class="card-year">b. 1913 · d. 1993</div><div class="card-note">× 馬靜如 · see below</div></div>
-    <div class="card yang deceased"><div class="card-name">楊秀貞</div><div class="card-alias">Jean Wong</div><div class="card-note">× 黃存欽 · see below</div></div>
+    <div class="card yang deceased"><div class="card-name">楊伯章</div><div class="card-note">字雲立 · d. 1959 · 2 wives</div></div>
+    <div class="card yang deceased"><div class="card-name">楊伯贊</div><div class="card-note">楊育之 · 字雲侣 · b.1903 · d.1982 · 2 wives</div></div>
+    <div class="card yang deceased"><div class="card-name">楊英鰲</div><div class="card-note">楊鰲 · 字雲海 · b.1913 · d.1993</div></div>
+    <div class="card yang deceased"><div class="card-name">楊秀貞</div><div class="card-english">Jean Wong</div><div class="card-note">× 黃存欽 · see below</div></div>
     <div class="card yang deceased"><div class="card-name">楊玉容</div><div class="card-year">b. 1915</div><div class="card-note">× 李沃芬 · see below</div></div>
   </div>
 
@@ -109,43 +109,47 @@ h1 { text-align: center; font-size: 22px; font-weight: 400; color: #2a2520; marg
     </div>
     <div class="arr">↓ Generation 4 children</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">楊碧玹</div><div class="card-alias">Rachel Courchesne</div><div class="card-year">b. 1941 · San Diego</div><div class="card-note">× Eric Courchesne (div.)</div></div>
+      <div class="card yang"><div class="card-name">楊碧玹</div><div class="card-english">Rachel Courchesne</div><div class="card-year">b. 1941 · San Diego</div><div class="card-note">× Eric Courchesne (div.)</div></div>
       <div class="card yang"><div class="card-name">楊碧琳</div><div class="card-year">b. 1944 · Seattle</div><div class="card-note">× 利忠能</div></div>
-      <div class="card yang"><div class="card-name">楊碧瓘</div><div class="card-alias">Bik Tye</div><div class="card-year">b. 1947 · Seattle</div><div class="card-note">× 戴自海 (Henry Tye)</div></div>
+      <div class="card yang"><div class="card-name">楊碧瓘</div><div class="card-english">Bik Tye</div><div class="card-year">b. 1947 · Seattle</div><div class="card-note">× 戴自海 Henry Tye</div></div>
       <div class="card yang deceased"><div class="card-name">楊祖由</div><div class="card-year">b. 1948 · d. 2023</div><div class="card-note">× Chefin Bobonis</div></div>
-      <div class="card yang deceased"><div class="card-name">楊碧瓖</div><div class="card-year">b. 1949 · d. 2023</div><div class="card-note">× Nagi Awas</div></div>
+      <div class="card yang deceased"><div class="card-name">楊碧瓖</div><div class="card-year">b. 1949 · d. 2023</div><div class="card-note">× Nagi Awas (b. 1951)</div></div>
     </div>
 
     <div class="gen-label" style="margin-top:10px;">楊碧玹 → Gen 5</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">楊奇葩</div><div class="card-alias">Khyber Courchesne</div><div class="card-year">b. 1974 · San Diego</div><div class="card-note">× Katrin Jogi (div.) → Maasika</div></div>
+      <div class="card yang"><div class="card-name">楊奇葩</div><div class="card-english">Khyber Courchesne</div><div class="card-year">b. 1974 · San Diego</div><div class="card-note">× Katrin Jogi (div.)</div></div>
+    </div>
+    <div class="gen-label">Gen 6 — Khyber's child</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">Maasika Courchesne</div><div class="card-year">b. 2010 · San Diego</div></div>
     </div>
 
     <div class="gen-label" style="margin-top:8px;">楊碧琳 × 利忠能 → Gen 5</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">利思維</div><div class="card-year">b. 1969 · Seattle</div><div class="card-note">× 鄭溫薇</div></div>
+      <div class="card yang"><div class="card-name">利思維</div><div class="card-year">b. 1969 · Seattle</div><div class="card-note">× 鄭溫薇 (Cynthia Tee)</div></div>
       <div class="card yang"><div class="card-name">利思欣</div><div class="card-year">b. 1972 · Antwerp</div><div class="card-note">× Rajmund Glowczinski</div></div>
     </div>
     <div class="gen-label">Gen 6</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">利樂真</div><div class="card-year">b. 2004</div></div>
-      <div class="card yang"><div class="card-name">利樂中</div><div class="card-year">b. 2006</div></div>
-      <div class="card yang"><div class="card-name">高靜慧</div><div class="card-alias">Sofie Glow</div><div class="card-year">b. 2006</div></div>
-      <div class="card yang"><div class="card-name">高靖博</div><div class="card-alias">Tibo Glow</div><div class="card-year">b. 2008</div></div>
+      <div class="card yang"><div class="card-name">利樂真</div><div class="card-year">b. 2004 · Seattle</div></div>
+      <div class="card yang"><div class="card-name">利樂中</div><div class="card-year">b. 2006 · Seattle</div></div>
+      <div class="card yang"><div class="card-name">高靜慧</div><div class="card-english">Sofie Glow</div><div class="card-year">b. 2006 · Antwerp</div></div>
+      <div class="card yang"><div class="card-name">高靖博</div><div class="card-english">Tibo Glow</div><div class="card-year">b. 2008 · Antwerp</div></div>
     </div>
 
     <div class="gen-label" style="margin-top:8px;">楊碧瓘 × 戴自海 → Gen 5</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">戴琦</div><div class="card-alias">Kay Tye</div><div class="card-year">b. 1981 · San Diego</div><div class="card-note">× James Wagner (div.)</div></div>
-      <div class="card yang"><div class="card-name">戴琳</div><div class="card-alias">Lynne Tye</div><div class="card-year">b. 1988 · Seattle</div><div class="card-note">× 葉冠廷</div></div>
+      <div class="card yang"><div class="card-name">戴琦</div><div class="card-english">Kay Tye</div><div class="card-year">b. 1981 · San Diego</div><div class="card-note">× James Wagner (div.)</div></div>
+      <div class="card yang"><div class="card-name">戴琳</div><div class="card-english">Lynne Tye</div><div class="card-year">b. 1988 · Seattle</div><div class="card-note">× 葉冠廷 (b. 1989)</div></div>
     </div>
     <div class="gen-label">Gen 6</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">戴奇華</div><div class="card-alias">Keeva Tye-Wagner</div></div>
-      <div class="card yang"><div class="card-name">戴傑華</div><div class="card-alias">Jet Tye-Wagner</div></div>
-      <div class="card yang"><div class="card-name">葉靜</div><div class="card-alias">Illumi</div></div>
-      <div class="card yang"><div class="card-name">葉君安</div><div class="card-alias">Revel</div></div>
-      <div class="card yang"><div class="card-name">葉留餘</div><div class="card-alias">Ten</div></div>
+      <div class="card yang"><div class="card-name">戴奇華</div><div class="card-english">Keeva Tye-Wagner</div><div class="card-year">b. 2013 · San Diego</div></div>
+      <div class="card yang"><div class="card-name">戴傑華</div><div class="card-english">Jet Tye-Wagner</div><div class="card-year">b. 2016 · San Diego</div></div>
+      <div class="card yang"><div class="card-name">葉靜</div><div class="card-english">Illumi</div><div class="card-year">b. 2021 · Seattle</div></div>
+      <div class="card yang"><div class="card-name">葉君安</div><div class="card-english">Revel</div><div class="card-year">b. 2023 · Seattle</div></div>
+      <div class="card yang"><div class="card-name">葉留餘</div><div class="card-english">Ten</div><div class="card-year">b. 2025 · Seattle</div></div>
     </div>
 
     <div class="gen-label" style="margin-top:8px;">楊碧瓖 × Nagi Awas → Gen 5</div>
@@ -162,37 +166,35 @@ h1 { text-align: center; font-size: 22px; font-weight: 400; color: #2a2520; marg
 
   <!-- 楊秀貞 -->
   <div class="subsection">
-    <div class="subsection-title">楊秀貞's Family (Jean Wong)</div>
+    <div class="subsection-title">楊秀貞 (Jean Wong) × 黃存欽</div>
     <div class="gen-row">
       <div class="couple">
-        <div class="card yang deceased"><div class="card-name">楊秀貞</div><div class="card-alias">Jean Wong</div></div>
+        <div class="card yang deceased"><div class="card-name">楊秀貞</div><div class="card-english">Jean Wong</div></div>
         <div class="sx">×</div>
         <div class="card in-law deceased"><div class="card-name">黃存欽</div></div>
       </div>
     </div>
     <div class="arr">↓ Generation 4 children</div>
     <div class="gen-row">
-      <div class="card yang deceased"><div class="card-name">黃海棠</div><div class="card-alias">Nora</div><div class="card-year">b. 1927</div><div class="card-note">× 黃永琪 → Edwin, Chichi, Karen</div></div>
-      <div class="card yang deceased"><div class="card-name">黃啟光</div><div class="card-alias">Alan</div><div class="card-year">b. 1930</div><div class="card-note">× Maria So → Amy, Serina</div></div>
-      <div class="card yang deceased"><div class="card-name">黃啟祥</div><div class="card-alias">Roger</div><div class="card-year">b. 1931</div><div class="card-note">× Evelyn Chan → Derek, Julie, Terry</div></div>
-      <div class="card yang deceased"><div class="card-name">黃啟昌</div><div class="card-alias">Casey</div><div class="card-year">b. 1934 · d. 1992</div><div class="card-note">× Ping (Woo) → Brenda, Andy, Pamala, Jason</div></div>
-      <div class="card yang"><div class="card-name">黃海珊</div><div class="card-alias">Susan Chan</div><div class="card-year">b. 1936 · Oakland CA</div><div class="card-note">× Tim Chan</div></div>
-      <div class="card yang"><div class="card-name">黃啟信</div><div class="card-alias">Carson</div><div class="card-year">b. 1938 · Jerome ID</div><div class="card-note">× Ronda (div.) · × Sue Miller</div></div>
+      <div class="card yang deceased"><div class="card-name">黃海棠</div><div class="card-english">Nora</div><div class="card-year">b. 1927</div><div class="card-note">× 黃永琪</div></div>
+      <div class="card yang deceased"><div class="card-name">黃啟光</div><div class="card-english">Alan</div><div class="card-year">b. 1930</div><div class="card-note">× Maria So → Amy, Serina</div></div>
+      <div class="card yang deceased"><div class="card-name">黃啟祥</div><div class="card-english">Roger</div><div class="card-year">b. 1931</div><div class="card-note">× Evelyn Chan → Derek, Julie, Terry</div></div>
+      <div class="card yang deceased"><div class="card-name">黃啟昌</div><div class="card-english">Casey</div><div class="card-year">b. 1934 · d. 1992</div><div class="card-note">× Ping (Woo) → Brenda, Andy, Pamala, Jason</div></div>
+      <div class="card yang"><div class="card-name">黃海珊</div><div class="card-english">Susan Chan</div><div class="card-year">b. 1936 · Oakland CA</div><div class="card-note">× Tim Chan</div></div>
+      <div class="card yang"><div class="card-name">黃啟信</div><div class="card-english">Carson</div><div class="card-year">b. 1938 · Jerome ID</div><div class="card-note">× Ronda (div.) · × Sue Miller</div></div>
     </div>
 
     <div class="gen-label" style="margin-top:8px;">黃海珊 (Susan Chan) × Tim Chan → Gen 5</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">Bill Chan</div><div class="card-year">Denville CA</div><div class="card-note">× Michelle → Stephen, Brian, Heather, Jennifer</div></div>
-      <div class="card yang"><div class="card-name">Wendy Chan</div><div class="card-year">Moraga CA</div><div class="card-note">× Neil → Tim</div></div>
+      <div class="card yang"><div class="card-name">陳子超</div><div class="card-english">Bill Chan</div><div class="card-year">Denville CA</div><div class="card-note">× Michelle → Stephen, Brian, Heather, Jennifer</div></div>
+      <div class="card yang"><div class="card-name">陳紫馨</div><div class="card-english">Wendy Chan</div><div class="card-year">Moraga CA</div><div class="card-note">× Neil → Tim</div></div>
     </div>
-
     <div class="gen-label" style="margin-top:6px;">黃海棠 (Nora) × 黃永琪 → Gen 5</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">黃頌尹</div><div class="card-alias">Edwin</div><div class="card-note">× Laura · San Jose CA</div></div>
-      <div class="card yang"><div class="card-name">頌慈</div><div class="card-alias">Chichi</div></div>
-      <div class="card yang"><div class="card-name">頌惠</div><div class="card-alias">Karen</div></div>
+      <div class="card yang"><div class="card-name">黃頌尹</div><div class="card-english">Edwin</div><div class="card-note">× 李利霞 Lorra Lee · San Jose CA</div></div>
+      <div class="card yang"><div class="card-name">頌慈</div><div class="card-english">Chichi</div></div>
+      <div class="card yang"><div class="card-name">頌惠</div><div class="card-english">Karen</div></div>
     </div>
-
     <div class="gen-label" style="margin-top:6px;">黃啟信 (Carson) → Gen 5</div>
     <div class="gen-row">
       <div class="card yang"><div class="card-name">Jeff Wong</div></div>
@@ -217,29 +219,49 @@ h1 { text-align: center; font-size: 22px; font-weight: 400; color: #2a2520; marg
 
   <!-- 楊伯贊 -->
   <div class="subsection">
-    <div class="subsection-title">楊伯贊's Family (b. 1903 · two wives)</div>
-    <div class="gen-label">Wife 1: 劉玉如 (1904–1932)</div>
+    <div class="subsection-title">楊伯贊's Family (b. 1903 · d. 1982 · two wives)</div>
+    <div class="gen-label">Wife 1: 劉玉如 (b. 1904 · d. 1932)</div>
     <div class="gen-row">
       <div class="card yang deceased"><div class="card-name">楊麗坤</div><div class="card-year">b. 1925 · d. 1935</div></div>
       <div class="card yang deceased"><div class="card-name">楊祖銘</div><div class="card-year">b. 1929 · d. 1992</div><div class="card-note">× Carlyn Hamaan (b. 1942)</div></div>
-      <div class="card yang deceased"><div class="card-name">楊祖榆</div><div class="card-year">b. 1931</div><div class="card-note">→ 楊虹, 楊靖環 (Alison), 楊澤宇 (Jason)</div></div>
+      <div class="card yang deceased"><div class="card-name">楊祖榆</div><div class="card-year">b. 1931 · d. 1983</div><div class="card-note">two wives · see below</div></div>
     </div>
-    <div class="gen-label">楊靖環 (Alison) × Wong Chi-Chin (Renee) · Melbourne</div>
+    <div class="gen-label">楊祖榆 wife 1: 湯善霞</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">黃弘楓</div><div class="card-alias">Charlie</div></div>
-      <div class="card yang"><div class="card-name">黃芝蕊</div><div class="card-alias">Ariana</div></div>
-      <div class="card yang"><div class="card-name">黃芝婉</div><div class="card-alias">Emmeline</div></div>
-      <div class="card yang"><div class="card-name">黃芝麗</div><div class="card-alias">Coralie</div></div>
+      <div class="card yang"><div class="card-name">楊虹</div></div>
     </div>
-    <div class="gen-label">楊澤宇 (Jason) × 江賢金 (Kim) · Melbourne</div>
+    <div class="gen-label">楊祖榆 wife 2: 徐少婷 → 楊靖環, 楊澤宇</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">楊竣棋</div><div class="card-alias">Jacob</div></div>
-      <div class="card yang"><div class="card-name">楊小瑩</div><div class="card-alias">Emily</div></div>
+      <div class="card yang"><div class="card-name">楊靖環</div><div class="card-english">Alison</div><div class="card-year">b. 1977 · Melbourne</div><div class="card-note">× 黃綺青 Renee (b. 1977)</div></div>
+      <div class="card yang"><div class="card-name">楊澤宇</div><div class="card-english">Jason</div><div class="card-year">b. 1980 · Melbourne</div><div class="card-note">× 江賢金 Kim</div></div>
     </div>
-    <div class="gen-label" style="margin-top:8px;">Wife 2: 陳潤桂 (1914–2014)</div>
+    <div class="gen-label">楊靖環's children</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">楊碧琪</div><div class="card-year">b. 1948 · Washington DC</div><div class="card-note">× Xuyen Vuong (王青川) → 王青律, 王青綸, 王青彬</div></div>
-      <div class="card yang"><div class="card-name">楊祖良</div><div class="card-year">b. 1951 · Toronto</div></div>
+      <div class="card yang"><div class="card-name">黃弘楓</div><div class="card-english">Charlie</div></div>
+      <div class="card yang"><div class="card-name">黃芝蕊</div><div class="card-english">Ariana</div></div>
+      <div class="card yang"><div class="card-name">黃芝婉</div><div class="card-english">Emmeline</div></div>
+      <div class="card yang"><div class="card-name">黃芝麗</div><div class="card-english">Coralie</div></div>
+    </div>
+    <div class="gen-label">楊澤宇's children</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">楊竣棋</div><div class="card-english">Jacob</div></div>
+      <div class="card yang"><div class="card-name">楊小瑩</div><div class="card-english">Emily</div></div>
+    </div>
+    <div class="gen-label" style="margin-top:8px;">Wife 2: 陳潤桂 (b. 1914)</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">楊碧琪</div><div class="card-year">b. 1948 · Vienna VA</div><div class="card-note">× 王清川 XT Vuong (b. 1948)</div></div>
+      <div class="card yang"><div class="card-name">楊祖良</div><div class="card-year">b. 1951 · Toronto</div><div class="card-note">× 鄧麗雄 Myra</div></div>
+    </div>
+    <div class="gen-label">楊碧琪 × 王清川 → Gen 5</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">王青律</div><div class="card-english">Luat T. Vuong</div><div class="card-year">b. 1976 · Riverside CA</div><div class="card-note">× Benjamin Stewart → 史超域王津 Zin (b. 2024)</div></div>
+      <div class="card yang"><div class="card-name">王靑綸</div><div class="card-english">Luan T. Vuong</div><div class="card-year">b. 1978 · Herndon VA</div></div>
+      <div class="card yang"><div class="card-name">王靑彬</div><div class="card-english">Ben T. Vuong</div><div class="card-year">b. 1982 · Herndon VA</div></div>
+    </div>
+    <div class="gen-label">楊祖良 × 鄧麗雄 → Gen 5</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">楊澤恆</div><div class="card-english">Hans</div><div class="card-year">b. 1980 · Hong Kong</div><div class="card-note">× 鄭奉申 Francine → 楊弘哲 Genesis (b. 2022)</div></div>
+      <div class="card yang"><div class="card-name">楊靖安</div><div class="card-english">Joanne</div><div class="card-year">b. 1984</div><div class="card-note">× Eric Sun → 孫雅睎 Aurora (b. 2021)</div></div>
     </div>
   </div>
 
@@ -250,34 +272,46 @@ h1 { text-align: center; font-size: 22px; font-weight: 400; color: #2a2520; marg
       <div class="couple">
         <div class="card yang deceased"><div class="card-name">楊玉容</div><div class="card-year">b. 1915</div></div>
         <div class="sx">×</div>
-        <div class="card in-law"><div class="card-name">李沃芬</div><div class="card-alias">Gilbert Lee</div></div>
+        <div class="card in-law"><div class="card-name">李沃芬</div><div class="card-english">李毓芳 · Gilbert Lee</div></div>
       </div>
     </div>
     <div class="arr">↓</div>
     <div class="gen-row">
-      <div class="card yang deceased"><div class="card-name">李世侃</div><div class="card-alias">Anthony</div><div class="card-year">b. 1943 · d. 2020</div><div class="card-note">× 黃穗珠 (Grace, b. 1946)</div></div>
-      <div class="card yang"><div class="card-name">李世任</div><div class="card-alias">Sumner</div><div class="card-year">b. 1946 · Edmonton</div><div class="card-note">× Annie → Ivar, Samantha?</div></div>
-      <div class="card yang"><div class="card-name">李世儒</div><div class="card-alias">Winston</div><div class="card-year">b. 1949 · Isle of Wight UK</div><div class="card-note">→ Benjamin, Daniel, Mathew, Sebastian</div></div>
+      <div class="card yang deceased"><div class="card-name">李世侃</div><div class="card-english">Anthony</div><div class="card-year">b. 1943 · d. 2020</div><div class="card-note">× 黃穗珠 Grace (b. 1946) · McLean VA</div></div>
+      <div class="card yang"><div class="card-name">李世任</div><div class="card-english">Sumner</div><div class="card-year">b. 1946 · Edmonton</div><div class="card-note">× Annie Lee (b. 1948)</div></div>
+      <div class="card yang"><div class="card-name">李世儒</div><div class="card-english">Winston</div><div class="card-year">b. 1949 · Isle of Wight UK</div><div class="card-note">× Linda Mary</div></div>
+    </div>
+    <div class="gen-label">李世任 × Annie → Gen 5</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">Ivar Lee</div><div class="card-year">b. 1980 · Edmonton</div><div class="card-note">× Claire Min</div></div>
+      <div class="card yang"><div class="card-name">Samantha Lee</div><div class="card-year">b. 1984 · Edmonton</div></div>
+    </div>
+    <div class="gen-label">李世儒 × Linda Mary → Gen 5</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">Benjamin Lee</div></div>
+      <div class="card yang"><div class="card-name">Daniel Lee</div><div class="card-note">× Carly → Amelia, Thea</div></div>
+      <div class="card yang"><div class="card-name">Mathew Lee</div><div class="card-note">× Lois → Ada</div></div>
+      <div class="card yang"><div class="card-name">Sebastian Lee</div></div>
     </div>
   </div>
 </div>
 
 
-<!-- 楊煒廷 × 胡氏 -->
+<!-- 楊煒廷 × 胡桂珍 -->
 <div class="section">
-  <div class="section-title">楊煒廷 × 胡氏 — Second Family</div>
+  <div class="section-title">楊煒廷 × 胡桂珍 — Second Family</div>
   <div class="gen-row">
     <div class="couple">
       <div class="card yang deceased"><div class="card-name">楊煒廷</div><div class="card-year">b. 1882 · d. 1962</div></div>
       <div class="sx">×</div>
-      <div class="card in-law deceased"><div class="card-name">胡氏</div><div class="card-year">b. 1904 · d. 1952</div></div>
+      <div class="card in-law deceased"><div class="card-name">胡桂珍</div><div class="card-year">b. 1904 · d. 1952</div></div>
     </div>
   </div>
   <div class="arr">↓ Generation 3 children</div>
   <div class="gen-row">
-    <div class="card yang deceased"><div class="card-name">楊金愛</div><div class="card-note">× 鐘士豪 · see below</div></div>
+    <div class="card yang deceased"><div class="card-name">楊金愛</div><div class="card-note">× 鍾士豪 · see below</div></div>
     <div class="card yang deceased"><div class="card-name">楊伯駿</div><div class="card-year">b. 1932 · d. 2006</div><div class="card-note">× 鄧慧賢 · see below</div></div>
-    <div class="card yang deceased"><div class="card-name">楊伯馴</div><div class="card-alias">Albert Young</div><div class="card-year">b. 1936 · d. 2025</div><div class="card-note">× 羅慧嘉 · see below</div></div>
+    <div class="card yang deceased"><div class="card-name">楊伯馴</div><div class="card-english">Albert Young</div><div class="card-year">b. 1936 · d. 2025</div><div class="card-note">× 羅慧嘉 · see below</div></div>
     <div class="card yang"><div class="card-name">楊玉影</div><div class="card-year">b. 1938 · Hong Kong</div><div class="card-note">× 李志剛 · see below</div></div>
   </div>
 
@@ -288,67 +322,79 @@ h1 { text-align: center; font-size: 22px; font-weight: 400; color: #2a2520; marg
       <div class="couple">
         <div class="card yang deceased"><div class="card-name">楊金愛</div></div>
         <div class="sx">×</div>
-        <div class="card in-law"><div class="card-name">鐘士豪</div></div>
+        <div class="card in-law deceased"><div class="card-name">鍾士豪</div></div>
       </div>
     </div>
-    <div class="arr">↓ child</div>
+    <div class="arr">↓</div>
     <div class="gen-row">
       <div class="couple">
-        <div class="card yang"><div class="card-name">鐘伊雲</div><div class="card-alias">Evelyn</div><div class="card-note">Toronto</div></div>
+        <div class="card yang"><div class="card-name">鐘伊雲</div><div class="card-english">Evelyn</div><div class="card-note">Toronto</div></div>
         <div class="sx">×</div>
-        <div class="card in-law"><div class="card-name">鐘啟明</div><div class="card-alias">Andrew</div></div>
+        <div class="card in-law"><div class="card-name">鐘啟明</div><div class="card-english">Andrew</div></div>
       </div>
     </div>
     <div class="gen-label">Gen 5</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">Cheryl 鐘</div></div>
+      <div class="couple">
+        <div class="card yang"><div class="card-name">鍾善行</div><div class="card-english">Cheryl</div></div>
+        <div class="sx">×</div>
+        <div class="card in-law"><div class="card-name">鄧</div></div>
+      </div>
+    </div>
+    <div class="gen-label">Gen 6 — Cheryl's child</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">鄧惠而</div><div class="card-english">Charlotte</div><div class="card-year">b. 2022</div></div>
     </div>
   </div>
 
   <!-- 楊伯駿 -->
   <div class="subsection">
-    <div class="subsection-title">楊伯駿's Family · Media PA</div>
+    <div class="subsection-title">楊伯駿 × 鄧慧賢 · Media PA</div>
     <div class="gen-row">
       <div class="couple">
         <div class="card yang deceased"><div class="card-name">楊伯駿</div><div class="card-year">b. 1932 · d. 2006</div></div>
         <div class="sx">×</div>
-        <div class="card in-law"><div class="card-name">鄧慧賢</div><div class="card-alias">Julianna</div><div class="card-year">b. 1937 · Media PA</div></div>
+        <div class="card in-law"><div class="card-name">鄧慧賢</div><div class="card-english">Julianna</div><div class="card-year">b. 1937 · Media PA</div></div>
       </div>
     </div>
     <div class="arr">↓ Gen 4 children</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">楊碧瑩</div><div class="card-alias">Doreen</div><div class="card-year">b. 1966</div><div class="card-note">× 屈振祥 (Trevor, b. 1963) → 屈穎琳 (Andrea, b. 2004)</div></div>
+      <div class="card yang"><div class="card-name">楊碧瑩</div><div class="card-english">Doreen</div><div class="card-year">b. 1966 · Media PA</div><div class="card-note">× 屈振祥 Trevor (b. 1963)</div></div>
       <div class="card yang deceased"><div class="card-name">楊祖恩</div><div class="card-year">b. 1968 · d. 2023</div><div class="card-note">× 楊詠紅 (b. 1966)</div></div>
+    </div>
+    <div class="gen-label">楊碧瑩's child</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">屈穎琳</div><div class="card-english">Andrea</div><div class="card-year">b. 2004</div></div>
     </div>
   </div>
 
   <!-- 楊伯馴 -->
   <div class="subsection">
-    <div class="subsection-title">楊伯馴's Family</div>
+    <div class="subsection-title">楊伯馴 (Albert) × 羅慧嘉 (Barbara)</div>
     <div class="gen-row">
       <div class="couple">
-        <div class="card yang deceased"><div class="card-name">楊伯馴 (Albert)</div><div class="card-year">b. 1936 · d. 2025</div></div>
+        <div class="card yang deceased"><div class="card-name">楊伯馴</div><div class="card-english">Albert Young</div><div class="card-year">b. 1936 · d. 2025</div></div>
         <div class="sx">×</div>
-        <div class="card in-law deceased"><div class="card-name">羅慧嘉 (Barbara)</div><div class="card-year">b. 1941 · d. 2019</div></div>
+        <div class="card in-law deceased"><div class="card-name">羅慧嘉</div><div class="card-english">Barbara Young</div><div class="card-year">b. 1941 · d. 2019</div></div>
       </div>
     </div>
     <div class="arr">↓ Gen 4 child</div>
     <div class="gen-row">
       <div class="couple">
-        <div class="card yang"><div class="card-name">楊祖能 (Jonas)</div><div class="card-year">b. 1971 · Vancouver</div></div>
+        <div class="card yang"><div class="card-name">楊祖能</div><div class="card-english">Jonas Young</div><div class="card-year">b. 1971 · Vancouver</div></div>
         <div class="sx">×</div>
-        <div class="card in-law"><div class="card-name">伍惠娟 (Sharon)</div><div class="card-year">b. 1970 · Vancouver</div></div>
+        <div class="card in-law"><div class="card-name">伍惠娟</div><div class="card-english">Sharon Young</div><div class="card-year">b. 1970 · Vancouver</div></div>
       </div>
     </div>
     <div class="gen-label">Gen 5</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">楊靖婷</div><div class="card-alias">Laura Stella Young</div><div class="card-year">b. 2019 · Vancouver</div></div>
+      <div class="card yang"><div class="card-name">楊靖婷</div><div class="card-english">Laura Stella Young</div><div class="card-year">b. 2019 · Vancouver</div></div>
     </div>
   </div>
 
   <!-- 楊玉影 -->
   <div class="subsection">
-    <div class="subsection-title">楊玉影's Family · Hong Kong</div>
+    <div class="subsection-title">楊玉影 × 李志剛 · Hong Kong</div>
     <div class="gen-row">
       <div class="couple">
         <div class="card yang"><div class="card-name">楊玉影</div><div class="card-year">b. 1938 · HK</div></div>
@@ -358,9 +404,17 @@ h1 { text-align: center; font-size: 22px; font-weight: 400; color: #2a2520; marg
     </div>
     <div class="arr">↓ Gen 4 children</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">李道恩</div><div class="card-year">b. 1969 · HK</div><div class="card-note">× 鄧佩雯 → 李國義 (2019)</div></div>
-      <div class="card yang"><div class="card-name">李道真</div><div class="card-year">b. 1972 · HK</div><div class="card-note">× 陸靜儀 → 李謙羭 (2001), 李謙翔 (2003)</div></div>
-      <div class="card yang"><div class="card-name">李道賢</div><div class="card-year">b. 1977 · HK</div><div class="card-note">× 甘振揚 → 甘來恩 (2014), 甘來希 (2017)</div></div>
+      <div class="card yang"><div class="card-name">李道恩</div><div class="card-english">Timothy</div><div class="card-year">b. 1969 · HK</div><div class="card-note">× 鄧佩雯 (b. 1976)</div></div>
+      <div class="card yang"><div class="card-name">李道真</div><div class="card-english">Samuel</div><div class="card-year">b. 1972 · HK</div><div class="card-note">× 陸靜儀 (b. 1972)</div></div>
+      <div class="card yang"><div class="card-name">李道賢</div><div class="card-year">b. 1977 · HK</div><div class="card-note">× 甘振揚 (b. 1976)</div></div>
+    </div>
+    <div class="gen-label">Gen 5 children</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">李國義</div><div class="card-year">b. 2019 · HK</div><div class="card-note">父: 李道恩</div></div>
+      <div class="card yang"><div class="card-name">李謙羭</div><div class="card-year">b. 2001 · HK</div><div class="card-note">父: 李道真</div></div>
+      <div class="card yang"><div class="card-name">李謙翔</div><div class="card-year">b. 2003 · HK</div><div class="card-note">父: 李道真</div></div>
+      <div class="card yang"><div class="card-name">甘來恩</div><div class="card-year">b. 2014 · HK</div><div class="card-note">父: 甘振揚</div></div>
+      <div class="card yang"><div class="card-name">甘來希</div><div class="card-year">b. 2017 · HK</div><div class="card-note">父: 甘振揚</div></div>
     </div>
   </div>
 </div>
@@ -378,111 +432,136 @@ h1 { text-align: center; font-size: 22px; font-weight: 400; color: #2a2520; marg
   </div>
   <div class="arr">↓ Generation 3 children</div>
   <div class="gen-row">
-    <div class="card yang deceased"><div class="card-name">楊伯鵬</div><div class="card-year">b. 1913 · d. 2009</div><div class="card-note">× 李紅梅 · see below</div></div>
+    <div class="card yang deceased"><div class="card-name">楊伯鵬</div><div class="card-english">Bak P.</div><div class="card-year">b. 1913 · d. 2009</div><div class="card-note">× 李紅梅 · see below</div></div>
     <div class="card yang deceased"><div class="card-name">楊琇珍</div><div class="card-note">× 李清慰 (both dec.)</div></div>
-    <div class="card yang deceased"><div class="card-name">楊琇娟</div><div class="card-year">1923–2014</div><div class="card-note">× 劉裕瑄 · see below</div></div>
-    <div class="card yang deceased"><div class="card-name">楊琇瑛</div><div class="card-year">b. 1929 · d. 2020</div><div class="card-note">× 林正基 · see below</div></div>
-    <div class="card yang deceased"><div class="card-name">楊伯倫</div><div class="card-year">b. 1931 · d. 2023</div><div class="card-note">× 林幼梅 · see below</div></div>
+    <div class="card yang deceased"><div class="card-name">楊琇娟</div><div class="card-english">Sally</div><div class="card-year">1923–2014</div><div class="card-note">× 劉裕瑄 · see below</div></div>
+    <div class="card yang deceased"><div class="card-name">楊琇瑛</div><div class="card-english">Pansy</div><div class="card-year">b. 1929 · d. 2020</div><div class="card-note">× 林正基 · see below</div></div>
+    <div class="card yang deceased"><div class="card-name">楊伯倫</div><div class="card-english">David</div><div class="card-year">b. 1931 · d. 2023</div><div class="card-note">× 林幼梅 · see below</div></div>
   </div>
 
   <!-- 楊伯鵬 -->
   <div class="subsection">
-    <div class="subsection-title">楊伯鵬's Family (1913–2009)</div>
-    <div class="gen-row">
-      <div class="couple">
-        <div class="card yang deceased"><div class="card-name">楊伯鵬</div><div class="card-year">b. 1913 · d. 2009</div></div>
-        <div class="sx">×</div>
-        <div class="card in-law deceased"><div class="card-name">李紅梅</div><div class="card-year">b. 1914 · d. 1989</div></div>
-      </div>
-    </div>
+    <div class="subsection-title">楊伯鵬 (Bak P.) × 李紅梅 (Helen) · 1913–2009</div>
     <div class="arr">↓ Gen 4 children</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">楊碧文</div><div class="card-year">b. 1941 · Los Angeles</div><div class="card-note">× 周士光 → 周詠詞, 周詠詳</div></div>
-      <div class="card yang"><div class="card-name">楊祖志</div><div class="card-year">b. 1946</div><div class="card-note">× 朱麗萍 → 楊忻忻, 楊永匡</div></div>
-      <div class="card yang"><div class="card-name">楊碧心</div><div class="card-year">b. 1948</div><div class="card-note">× 顏耀璋 → 顏芳瑜 (× 吳敏華)</div></div>
-      <div class="card yang deceased"><div class="card-name">楊祖成</div><div class="card-year">b. 1950 · d. 2017</div><div class="card-note">× 鍾麗霞 → 楊忻玪 (× 黃頴生)</div></div>
-      <div class="card yang deceased"><div class="card-name">楊祖浩</div><div class="card-year">b. 1952 · d. 2017</div></div>
+      <div class="card yang"><div class="card-name">楊碧文</div><div class="card-english">Becky</div><div class="card-year">b. 1941 · Los Angeles</div><div class="card-note">× 周士光 Jimmy Joe Sr. (b. 1929)</div></div>
+      <div class="card yang"><div class="card-name">楊祖志</div><div class="card-english">George</div><div class="card-year">b. 1946</div><div class="card-note">× 朱麗萍 Cathy (b. 1950)</div></div>
+      <div class="card yang"><div class="card-name">楊碧心</div><div class="card-english">Jeannie</div><div class="card-year">b. 1948</div><div class="card-note">× 顏耀璋 Michael (b. 1951)</div></div>
+      <div class="card yang deceased"><div class="card-name">楊祖成</div><div class="card-english">John</div><div class="card-year">1950–2017</div><div class="card-note">× 鍾麗霞 Teresa (b. 1951)</div></div>
+      <div class="card yang deceased"><div class="card-name">楊祖浩</div><div class="card-english">Tony</div><div class="card-year">1952–2017</div></div>
+    </div>
+    <div class="gen-label">Gen 5 — 楊碧文's children</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">周詠詞</div><div class="card-english">Jimmy Joe Jr.</div><div class="card-year">b. 1966</div></div>
+      <div class="card yang"><div class="card-name">周詠詳</div><div class="card-english">Jonathan Joe</div><div class="card-year">b. 1967</div></div>
+    </div>
+    <div class="gen-label">Gen 5 — 楊祖志's children</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">楊忻忻</div><div class="card-english">Jenny</div><div class="card-year">b. 1980</div></div>
+      <div class="card yang"><div class="card-name">楊永匡</div><div class="card-english">Jason</div><div class="card-year">b. 1984</div></div>
+    </div>
+    <div class="gen-label">Gen 5 — 楊碧心's family</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">顏芳瑜</div><div class="card-english">Amy</div><div class="card-year">b. 1982</div><div class="card-note">× 吳敏華 Mun-Wah (b. 1981)</div></div>
+    </div>
+    <div class="gen-label">Gen 6 — 顏芳瑜's children</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">吳卓軒</div><div class="card-english">Andrew</div><div class="card-year">b. 2012</div></div>
+      <div class="card yang"><div class="card-name">吳卓朗</div><div class="card-english">Christopher</div><div class="card-year">b. 2015</div></div>
+    </div>
+    <div class="gen-label">Gen 5 — 楊祖成's child</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">楊忻玪</div><div class="card-english">Vivian</div><div class="card-year">b. 1981</div><div class="card-note">× 黃頴生 James (b. 1980)</div></div>
     </div>
   </div>
 
   <!-- 楊琇娟 -->
   <div class="subsection">
-    <div class="subsection-title">楊琇娟's Family (1923–2014)</div>
+    <div class="subsection-title">楊琇娟 (Sally) × 劉裕瑄 (Y.H. Liu) · 1923–2014</div>
     <div class="gen-row">
       <div class="couple">
-        <div class="card yang deceased"><div class="card-name">楊琇娟</div><div class="card-year">1923–2014</div></div>
+        <div class="card yang deceased"><div class="card-name">楊琇娟</div><div class="card-english">Sally</div><div class="card-year">1923–2014</div></div>
         <div class="sx">×</div>
-        <div class="card in-law deceased"><div class="card-name">劉裕瑄</div><div class="card-year">1918–2014</div></div>
+        <div class="card in-law deceased"><div class="card-name">劉裕瑄</div><div class="card-english">Y.H. Liu</div><div class="card-year">1918–2014</div></div>
       </div>
     </div>
     <div class="arr">↓ Gen 4 child</div>
     <div class="gen-row">
       <div class="couple">
-        <div class="card yang"><div class="card-name">劉芳之</div><div class="card-year">b. 1955</div></div>
+        <div class="card yang"><div class="card-name">劉芳之</div><div class="card-english">Fong</div><div class="card-year">b. 1955</div></div>
         <div class="sx">×</div>
-        <div class="card in-law"><div class="card-name">謝明</div><div class="card-alias">Ming Hsieh</div><div class="card-year">b. 1956</div><div class="card-note">divorced · Founder, Cogent Systems</div></div>
+        <div class="card in-law"><div class="card-name">謝明</div><div class="card-english">Ming Hsieh</div><div class="card-year">b. 1956</div><div class="card-note">divorced · Founder, Cogent Systems</div></div>
       </div>
     </div>
     <div class="arr">↓ Gen 5 children</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">謝沛琳</div><div class="card-year">b. 1988</div></div>
-      <div class="card yang"><div class="card-name">謝沛婷</div><div class="card-year">b. 1991</div><div class="card-note">× 李芳杰 (b. 1991)</div></div>
+      <div class="card yang"><div class="card-name">謝沛琳</div><div class="card-english">Pauline</div><div class="card-year">b. 1988</div></div>
+      <div class="card yang"><div class="card-name">謝沛婷</div><div class="card-english">Tiffany</div><div class="card-year">b. 1991 · Los Angeles</div><div class="card-note">× 李芳杰 Brandon (b. 1991)</div></div>
     </div>
     <div class="gen-label">Gen 6 — 謝沛婷's children</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">李式明</div><div class="card-year">b. 2024</div></div>
-      <div class="card yang"><div class="card-name">李式浩</div><div class="card-year">b. 2026</div></div>
+      <div class="card yang"><div class="card-name">李式明</div><div class="card-english">Cameron</div><div class="card-year">b. 2024</div></div>
+      <div class="card yang"><div class="card-name">李式浩</div><div class="card-english">Adrian</div><div class="card-year">b. 2026</div></div>
     </div>
   </div>
 
   <!-- 楊琇瑛 -->
   <div class="subsection">
-    <div class="subsection-title">楊琇瑛's Family (1929–2020)</div>
+    <div class="subsection-title">楊琇瑛 (Pansy) × 林正基 (G.C.) · 1929–2020</div>
     <div class="gen-row">
       <div class="couple">
-        <div class="card yang deceased"><div class="card-name">楊琇瑛</div><div class="card-year">b. 1929 · d. 2020</div></div>
+        <div class="card yang deceased"><div class="card-name">楊琇瑛</div><div class="card-english">Pansy</div><div class="card-year">b. 1929 · d. 2020</div></div>
         <div class="sx">×</div>
-        <div class="card in-law deceased"><div class="card-name">林正基</div><div class="card-year">b. 1931 · d. 2022</div></div>
+        <div class="card in-law deceased"><div class="card-name">林正基</div><div class="card-english">G.C.</div><div class="card-year">b. 1931 · d. 2022</div></div>
       </div>
     </div>
     <div class="arr">↓ Gen 4 children</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">林澤崑</div><div class="card-year">b. 1959</div><div class="card-note">× 孫䁱滌 → 林恩瀚 (b. 2009)</div></div>
-      <div class="card yang"><div class="card-name">林澤堅</div><div class="card-alias">Daniel</div><div class="card-year">b. 1964</div><div class="card-note">× 李淑賢 (Helen) → 林綽渝 (2003), 林子浩 (2008)</div></div>
+      <div class="card yang"><div class="card-name">林澤崑</div><div class="card-english">Peter</div><div class="card-year">b. 1959</div><div class="card-note">× 孫䁱滌 Shelley (b. 1963)</div></div>
+      <div class="card yang"><div class="card-name">林澤堅</div><div class="card-english">Daniel</div><div class="card-year">b. 1964</div><div class="card-note">× 李淑賢 Helen (b. 1965)</div></div>
+    </div>
+    <div class="gen-label">林澤崑's child</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">林恩瀚</div><div class="card-english">Timothy</div><div class="card-year">b. 2009</div></div>
+    </div>
+    <div class="gen-label">林澤堅's children</div>
+    <div class="gen-row">
+      <div class="card yang"><div class="card-name">林綽渝</div><div class="card-english">Valerie</div><div class="card-year">b. 2003</div></div>
+      <div class="card yang"><div class="card-name">林子浩</div><div class="card-english">Jeremy</div><div class="card-year">b. 2008</div></div>
     </div>
   </div>
 
   <!-- 楊伯倫 -->
   <div class="subsection">
-    <div class="subsection-title">楊伯倫's Family · Hong Kong</div>
+    <div class="subsection-title">楊伯倫 (David) × 林幼梅 (Amy) · Hong Kong</div>
     <div class="gen-row">
       <div class="couple">
-        <div class="card yang deceased"><div class="card-name">楊伯倫</div><div class="card-year">b. 1931 · d. 2023</div></div>
+        <div class="card yang deceased"><div class="card-name">楊伯倫</div><div class="card-english">David</div><div class="card-year">b. 1931 · d. 2023</div></div>
         <div class="sx">×</div>
-        <div class="card in-law"><div class="card-name">林幼梅</div><div class="card-year">b. 1939 · Hong Kong</div></div>
+        <div class="card in-law"><div class="card-name">林幼梅</div><div class="card-english">Amy</div><div class="card-year">b. 1939 · Hong Kong</div></div>
       </div>
     </div>
     <div class="arr">↓ Gen 4 children</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">楊碧惠</div><div class="card-year">b. 1968</div><div class="card-note">× 詹兆輝 (b. 1961)</div></div>
-      <div class="card yang"><div class="card-name">楊碧樺</div><div class="card-year">b. 1969</div></div>
-      <div class="card yang"><div class="card-name">楊祖權</div><div class="card-year">b. 1973 · SF Bay Area</div><div class="card-note">× 何佳穎 (b. 1977)</div></div>
+      <div class="card yang"><div class="card-name">楊碧惠</div><div class="card-english">Beverly</div><div class="card-year">b. 1968 · HK</div><div class="card-note">× 詹兆輝 Felix (b. 1961)</div></div>
+      <div class="card yang"><div class="card-name">楊碧樺</div><div class="card-english">Patricia</div><div class="card-year">b. 1969 · HK</div></div>
+      <div class="card yang"><div class="card-name">楊祖權</div><div class="card-english">Kenneth</div><div class="card-year">b. 1973 · SF Bay Area</div><div class="card-note">× 何佳穎 Christina (b. 1977)</div></div>
     </div>
     <div class="gen-label" style="margin-top:8px;">楊碧惠 × 詹兆輝 → Gen 5</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">詹弘信</div><div class="card-year">b. 1999</div></div>
-      <div class="card yang"><div class="card-name">詹詠心</div><div class="card-year">b. 2003</div></div>
+      <div class="card yang"><div class="card-name">詹弘信</div><div class="card-english">Hansen</div><div class="card-year">b. 1999 · Toronto</div></div>
+      <div class="card yang"><div class="card-name">詹詠心</div><div class="card-english">Samantha</div><div class="card-year">b. 2003 · HK</div></div>
     </div>
     <div class="gen-label">楊祖權 × 何佳穎 → Gen 5</div>
     <div class="gen-row">
-      <div class="card yang"><div class="card-name">楊澤凱</div><div class="card-year">b. 2007 · N. California</div></div>
-      <div class="card yang"><div class="card-name">楊澤安</div><div class="card-year">b. 2011 · N. California</div></div>
+      <div class="card yang"><div class="card-name">楊澤凱</div><div class="card-english">Caleb</div><div class="card-year">b. 2007 · SF Bay Area</div></div>
+      <div class="card yang"><div class="card-name">楊澤安</div><div class="card-english">Micah</div><div class="card-year">b. 2011 · N. California</div></div>
     </div>
   </div>
 </div>
 
 <div class="tree-footer">
-  Generated April 10, 2026 · 楊氏家族樹
+  Generated April 21, 2026 · 楊氏家族樹
 </div>
 
 </body>
